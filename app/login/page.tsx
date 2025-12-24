@@ -172,7 +172,7 @@ export default function LoginPage() {
             </div>
 
             {/* Social Buttons */}
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-3">
               <button
                 type="button"
                 onClick={handleGoogleLogin}
@@ -190,15 +190,6 @@ export default function LoginPage() {
               >
                 <Github size={16} />
                 GitHub
-              </button>
-              <button
-                type="button"
-                onClick={handleOTPLogin}
-                disabled={isLoading}
-                className="py-3 bg-white/50 dark:bg-slate-800/50 border border-border/50 hover:border-primary/30 hover:bg-primary/5 rounded-xl transition-all font-medium text-sm flex items-center justify-center gap-2 shadow-sm hover:shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                <span className="text-lg">📧</span>
-                OTP
               </button>
             </div>
 
