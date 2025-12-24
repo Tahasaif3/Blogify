@@ -86,16 +86,30 @@ export default function SettingsPage() {
           </div>
 
           {/* Danger Zone */}
-          <div className="bg-white border border-danger rounded-xl p-8">
-            <h2 className="text-2xl font-bold mb-6 text-danger">Danger Zone</h2>
+         <div className="bg-white border border-red-300 rounded-2xl p-8 shadow-sm">
+  <h2 className="text-2xl font-bold mb-6 text-red-600 flex items-center gap-2">
+    ⚠️ Danger Zone
+  </h2>
 
-            <button
-              onClick={handleLogout}
-              className="w-full py-3 bg-danger text-white rounded-lg hover:bg-danger/90 transition-colors font-medium"
-            >
-              Logout
-            </button>
-          </div>
+  <button
+    onClick={handleLogout}
+    className="
+      w-full py-3
+      bg-red-600 text-white
+      rounded-xl font-semibold
+      shadow-md
+      hover:bg-red-700
+      hover:shadow-lg
+      active:scale-[0.98]
+      transition-all duration-200
+      focus:outline-none
+      focus:ring-2 focus:ring-red-400 focus:ring-offset-2
+    "
+  >
+    Logout
+  </button>
+</div>
+
         </div>
       </main>
     </>
