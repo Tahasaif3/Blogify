@@ -197,7 +197,7 @@ export default function SignupPage() {
             </div>
 
             {/* Social Buttons */}
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 gap-3">
               <button
                 type="button"
                 onClick={handleGoogleSignup}
